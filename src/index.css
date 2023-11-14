@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: calc(1170px + 48px);
+    margin: 0 auto;
+    @apply px-6;
+}
+
+.btn-theme {
+    @apply font-semibold border-red-500 border-2 px-5 py-2 bg-white rounded-xl text-red-500 transition-[400ms];
+}
+
+.btn-theme:hover {
+    @apply text-white bg-red-500;
+}
+
+.btn-theme-red {
+    @apply font-semibold border-2 px-5 py-2 bg-red-500 rounded-xl text-white transition-[400ms] border-red-500;
+}
+
+.btn-theme-red:hover {
+    @apply text-red-500 bg-white;
+}
+
+.login-content {
+    min-height: calc(100vh - 80px);
+}
+
+.gheThuong {
+    @apply bg-gray-300 h-10 w-10 leading-10 text-center rounded-md;
+}
+
+.gheVip {
+    @apply bg-orange-400 h-10 w-10 leading-10 text-center rounded-md;
+}
+
+.tablePurchase th,
+.tablePurchase td {
+    @apply py-5 border-t-2;
+}
+
+.tablePurchase td {
+    @apply text-right;
+}
+
+.gheDaDat {
+    @apply !cursor-none !bg-gray-800 text-white h-10 w-10 leading-10 text-center rounded-md;
+}
+.ant-btn.ant-btn-primary {
+    background-color: black; 
+}
